@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
+import Link from 'next/link'; // Import Link from next/link
 
 export default function Home() {
   const [interests, setInterests] = useState('');
@@ -88,12 +89,12 @@ export default function Home() {
       <footer className="w-full bg-white/10 py-6 text-center text-sm text-muted-foreground">
         <div>© 2024 TikTok Bio Generator. All rights reserved.</div>
         <div className="flex justify-center gap-4 mt-2">
-          <a href="#" className="hover:underline" prefetch={false}>
+          <Link href="/privacy-policy" className="hover:underline">
             Privacy Policy
-          </a>
-          <a href="#" className="hover:underline" prefetch={false}>
+          </Link>
+          <Link href="/terms-of-service" className="hover:underline">
             Terms of Service
-          </a>
+          </Link>
         </div>
       </footer>
     </div>
