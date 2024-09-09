@@ -1,4 +1,4 @@
-* @see https://v0.dev/t/mzH2z95SqNn
+// @see https://v0.dev/t/mzH2z95SqNn
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
