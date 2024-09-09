@@ -8,7 +8,7 @@ export default function Home() {
   const [generatedBio, setGeneratedBio] = useState('');
   const [copyText, setCopyText] = useState('Copy');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const response = await fetch('/api/generate-bio', {
       method: 'POST',
